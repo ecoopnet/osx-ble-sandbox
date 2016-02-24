@@ -15,4 +15,11 @@ Bleacon.on('discover', (bleacon)=>{
   console.log(bleacon);
 });
 
-Bleacon.startScanning();
+try {
+  Bleacon.startScanning();
+} catch (e){
+  console.log("Failed to start scanning");
+  console.log(e);
+}
+
+

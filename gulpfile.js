@@ -2,6 +2,7 @@ var gulp = require("gulp");
 var sourcemaps = require("gulp-sourcemaps");
 var babel = require("gulp-babel");
 var concat = require("gulp-concat");
+var shell = require('gulp-shell');
 
 gulp.task('babel', function() {
   return gulp.src("./src/**/*.js")
@@ -14,6 +15,12 @@ gulp.task('babel', function() {
 
 gulp.task('watch', function() {
   gulp.watch('./src/*.js', ['babel'])
+});
+
+gulp.task('run', function(){
+  return gulp.src('./dist/all.js').pipe(shell([
+    'node <%= file.path %>'
+  ]));
 });
 
 gulp.task('default', ['babel', 'watch']);
