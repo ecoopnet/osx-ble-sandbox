@@ -22,7 +22,7 @@ var major = 0;
 var minor = 0;
 var measuredPower = -59;
 
-console.log("current uuid is: "+uuid);
+console.log("My UUID is: "+uuid);
 console.log("Starting Advertising...");
 try {
   Bleacon.startAdvertising(uuid, major, minor, measuredPower);
