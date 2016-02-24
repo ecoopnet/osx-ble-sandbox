@@ -8,9 +8,9 @@ brew install npm node
 npm install gulp-cli -g
 # npm アップデート
 npm install
-# src/ を監視・トランスパイルして dist/ にJS生成
+# 実行(必要ならsrcからビルド)
+gulp run
+# 開発用のコマンド。 src/ を監視・トランスパイルして dist/ にJS生成する。
 gulp
-# 実行
-( cd dist; node all.js; )
 ```
 
