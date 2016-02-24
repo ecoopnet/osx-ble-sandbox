@@ -1,6 +1,12 @@
 # osx-ble-sandbox
 OS X で BLEを発信・受信し続けるスクリプト。
 
+環境:
+
+- OS X El Capitan(10.11.3)
+- Node JS
+- Gulp
+- Babel ES2015
 
 ```
 # 必要な環境をインストール
