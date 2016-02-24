@@ -1,5 +1,5 @@
 # osx-ble-sandbox
-OS X で BLEでなにかしたい
+OS X で BLEを発信・受信し続けるスクリプト。
 
 
 ```
