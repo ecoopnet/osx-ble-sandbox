@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "bleacon": "^0.4.0"
+    "bleacon": "^0.4.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.6.0"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.5.0",
     "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2"
+    "gulp-babel": "^6.1.2",
+    "gulp-shell": "^0.5.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
